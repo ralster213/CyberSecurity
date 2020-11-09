@@ -143,4 +143,6 @@ You should wear a light jacket today.
 
 Would you like another weather report (Y/N): *N*  
 
+Understandable.
 Have a nice day.
+
