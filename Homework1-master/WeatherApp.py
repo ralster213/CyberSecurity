@@ -9,13 +9,13 @@ import WeatherInfo
 WeatherInfo.setKey("486ed41a7132cb68475ad7bf69cc3261")
 
 #Ask the user for their city
-city = str(input("Name a City: "))
-WeatherInfo.setCity(city)
-print("1")
+city = input("Name a City: ")
+print(city)
 #Update the weather with the given city
+
 WeatherInfo.updateWeather()
 #Request any data you need from the WeatherInfo API
-print("2")
+
 #Process the data
 #convert temperature to fahrenheit,
 #determine wind speed in words
