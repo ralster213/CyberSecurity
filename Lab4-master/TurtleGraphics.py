@@ -4,16 +4,71 @@
 #Assignment:
 
 import turtle
+import pygame, time
+
+def drawSquare(myTurtle, size):    
+    for i in range(4):        
+        myTurtle.forward(size)        
+        myTurtle.right(90)
+def drawPolygon(myTurtle, sides):    
+    for i in range(sides):        
+        myTurtle.forward(50)        
+        myTurtle.right(360/sides)
+
+
+def fillCorner(myTurtle, number):    
+    myTurtle.color("red","blue")    
+    myTurtle.begin_fill()    
+    if number >= 3:        
+        myTurtle.right(180)    
+        for i in range(4):        
+            myTurtle.forward(500)        
+            if (number % 2) == 1:            
+                myTurtle.left(90)        
+                else:            
+                    myTurtle.right(90)    
+                    myTurtle.end_fill()
+
+def squaresInSquares(myTurtle, sqNum):  
+    myTurtle.color("green","yellow")   
+    myTurtle.up()   
+    myTurtle.back(200)  
+    myTurtle.left(90)    
+    myTurtle.forward(200)    
+    myTurtle.right(90)    
+    myTurtle.down()    
+    index = 0    
+    for i in range(sqNum):        
+        if (index+1) == sqNum:            
+            myTurtle.begin_fill()        
+            size = 400-(2*index*20)        
+            drawSquare(myTurtle, size)        
+            if (index+1) == sqNum:            
+                myTurtle.end_fill()            
+                break        
+            myTurtle.forward(20)        
+            myTurtle.right(90)        
+            myTurtle.up()        
+            myTurtle.forward(20)        
+            myTurtle.down()        
+            myTurtle.left(90)        
+            index = index+1
+
+
 
 def drawSquare(myTurtle, size):
     for i in range(4):
         myTurtle.forward(size)
         myTurtle.right(90)
 
-
+def drawPolygon(myTurtle, )
 def main():
     myTurtle = turtle.Turtle()
-    # drawPolygon(myTurtle, 5) #draws a pentagon
+    drawSquare(myTurtle, 2)
+    drawSquare(myTurtle, 5)
+    #while True:
+   #     if KEYDOWN
+    #drawPolygon(myTurtle, 5) #draws a pentagon
     # drawPolygon(myTurtle, 8) #draws an octogon
 
     # fillCorner(myTurtle, 2) #draws a square with top right corner filled in.

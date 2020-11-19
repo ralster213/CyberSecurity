@@ -10,7 +10,8 @@ def main():
   #prompt the user for a webpage url
   url = 'https://www.unomaha.edu/college-of-information-science-and-technology/about/faculty-staff/index.php'
   url_html = urllib.request.urlopen(url)
-
+  links = []
+  
   soup = BeautifulSoup(url_html, "html.parser")
 
   #Convert the soup to a string version
