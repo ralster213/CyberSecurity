@@ -10,6 +10,14 @@ def drawSquare(myTurtle, size):
     for i in range(4):        
         myTurtle.forward(size)        
         myTurtle.right(90)
+
+
+
+
+
+
+
+
 def drawPolygon(myTurtle, sides):    
     for i in range(sides):        
         myTurtle.forward(50)        
@@ -23,11 +31,11 @@ def fillCorner(myTurtle, number):
         myTurtle.right(180)    
         for i in range(4):        
             myTurtle.forward(500)        
-            if (number % 2) == 1:            
+            if(number % 2) == 1:            
                 myTurtle.left(90)        
-                else:            
-                    myTurtle.right(90)    
-                    myTurtle.end_fill()
+            else:            
+                myTurtle.right(90)    
+                myTurtle.end_fill()
 
 def squaresInSquares(myTurtle, sqNum):  
     myTurtle.color("green","yellow")   
@@ -56,15 +64,14 @@ def squaresInSquares(myTurtle, sqNum):
 
 
 
-def drawSquare(myTurtle, size):
+#def drawSquare(myTurtle, size):
     for i in range(4):
         myTurtle.forward(size)
         myTurtle.right(90)
-
-def drawPolygon(myTurtle, )
 def main():
     myTurtle = turtle.Turtle()
     drawSquare(myTurtle, 2)
+    drawPolygon(myTurtle, 7)
     drawSquare(myTurtle, 5)
     #while True:
    #     if KEYDOWN
